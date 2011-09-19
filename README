@@ -2,7 +2,7 @@ If you ever needed to populate a page that had a set number of blocks/divs/etc..
 
 Use as follows:
 
-{expo:channel:entries}
+{exp:channel:entries}
 {if count==total_results}
 {exp:extra_entries total_results="{total_results}" how_many_entries=""}
  content you want to show in extra spots
