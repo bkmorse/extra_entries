@@ -1,3 +1,5 @@
+If you ever needed to populate a page that had a set number of blocks/divs/etc.. and you always need to display a set number but your channel may not contain that many all the time, this will allow you to provide filler at those times.
+
 Use as follows:
 
 {if count==total_results}
