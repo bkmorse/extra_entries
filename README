@@ -10,3 +10,9 @@ total_results (required) = pass total_results tag within this
 how_many_entries (required) = pass the number of how many times you want to loop it thru
 
 the content between the opening and closing tag is the html and/or content you want to display for the extra fields
+
+Put the extra_entries folder into your system/expressionengine/third_party/ folder, so then you'll have system/expressionengine/third_party/extra_entries
+
+To-do:
+
+figure out how to display the content without having to wrap the plugin within {if count==total_results}plugin{/if}

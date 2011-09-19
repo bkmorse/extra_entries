@@ -14,7 +14,7 @@
     'pi_name'			    => 'Extra Entries',
     'pi_version'	  	=> '1.0.0',
     'pi_author'		    => 'Brad Morse',
-    'pi_author_url'	  => 'http://twitter.com/bkmorse',
+    'pi_author_url'	  => 'http://bkmorse.com',
     'pi_description'	=> 'Adds extra entries to all the entries you have in that channel',
     'pi_usage'		    => Extra_entries::usage()
   );
