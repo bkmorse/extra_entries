@@ -59,12 +59,14 @@
     ?>
     Use as follows:
 
-    {if count==total_results}
+    {exp:channel:entries}
+		{if count==total_results}
 			{exp:extra_entries total_results="{total_results}" how_many_entries=""}
 			  content you want to show in extra spots
 			{/exp:extra_entries}
 		{/if}
-
+		{/exp:channel:entries}
+		
     total_results (required) = pass total_results tag within this
 		how_many_entries (required) = pass the number of how many times you want to loop it thru
 		
