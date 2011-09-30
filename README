@@ -1,22 +1,10 @@
-If you ever needed to populate a page that had a set number of blocks/divs/etc.. and you always need to display a set number but your channel may not contain that many all the time, this will allow you to provide filler at those times.
+You supply the url_title and it returns the id(s) it has been assigned, as well as the ability to separate the id's by using the separator parameter
+
+Can be used within or outside of channel entries tag
 
 Use as follows:
 
-{exp:channel:entries}
-{if count==total_results}
-{exp:extra_entries total_results="{total_results}" how_many_entries=""}
- content you want to show in extra spots
-{/exp:extra_entries}
-{/if}
-{/exp:channel:entries}
-
-total_results (required) = pass total_results tag within this
-how_many_entries (required) = pass the number of how many times you want to loop it thru
-
-the content between the opening and closing tag is the html and/or content you want to display for the extra fields
-
-Put the extra_entries folder into your system/expressionengine/third_party/ folder, so then you'll have system/expressionengine/third_party/extra_entries
-
-To-do:
-
-figure out how to display the content without having to wrap the plugin within {if count==total_results}plugin{/if}
+example: {exp:title_cat url_title="{url_title}" separator="&"}
+	
+url_title (required), can manually put in the url_title or use within channel entries tag, and doing something like url_title="{url_title}" 
+separator (optional), breaks up the ids (if there is more than one returned), so if you did separator="&", it'd return 1&2&3
